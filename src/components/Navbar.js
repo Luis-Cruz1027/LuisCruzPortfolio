@@ -10,7 +10,7 @@ function Navbar(){
     const closeMenu = () => setClick(false);
 
     const showButton = () => {
-        if(window.innerWidth <= 950){
+        if(window.innerWidth >= 950){
             setButton(false);
         }
         else{
@@ -31,7 +31,7 @@ function Navbar(){
                         </div>
                     </Link>
                     <div onClick={handleClick}>
-                        <i className={click ? "fa-solid fa-xmark menu-icon" : "fa-solid fa-bars menu-icon"}/>
+                        <i className={button ? click ? "fa-solid fa-xmark menu-icon" : "fa-solid fa-bars menu-icon" : ""}/>
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>

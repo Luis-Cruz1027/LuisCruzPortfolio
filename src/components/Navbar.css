@@ -20,14 +20,25 @@
   
   .navbar-logo {
     color: #fff;
-    justify-self: start;
-    margin-left: 20px;
+    top: 0;
+    left: 0;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
-    display: flex;
-    align-items: center;
+    font-family: oswald;
+    position: absolute;
+    transform: translate(25%, 50%);
   }
+
+  .navbar-trail {
+    position: absolute;
+    top: 45%;
+    opacity: .3;
+    translate: 115px;
+    font-size: small;
+    font-style: italic;
+    white-space: nowrap;
+}
   
   .fa-typo3 {
     margin-left: 0.5rem;
@@ -43,6 +54,8 @@
     width: 60vw;
     justify-content: end;
     margin-right: 2rem;
+    font-family: oswald;
+    font-style: bold;
   }
   
   .nav-item {
@@ -110,19 +123,12 @@
     }
   
     .navbar-logo {
-      position: absolute;
       top: 0;
       left: 0;
-      transform: translate(25%, 50%);
-      white-space: nowrap;
     }
 
-    .navbar-trail {
-        position: absolute;
-        top: 20%;
-        transform: translate(60%, 80%);
-        opacity: .3;
-        font-size: small;
+    .navbar-trail{
+      top: 45%;
     }
   
     .menu-icon {
