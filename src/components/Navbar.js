@@ -5,12 +5,11 @@ import './Navbar.css';
 function Navbar(){
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
-
     const handleClick = () => setClick(!click);
     const closeMenu = () => setClick(false);
 
     const showButton = () => {
-        if(window.innerWidth >= 950){
+        if(window.innerWidth >= 768){
             setButton(false);
         }
         else{
@@ -34,13 +33,13 @@ function Navbar(){
                         <i className={button ? click ? "fa-solid fa-xmark menu-icon" : "fa-solid fa-bars menu-icon" : ""}/>
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className='nav-item'>
-                            <Link to='/skills' className='nav-links' onClick={closeMenu}>
+                        <li className="nav-item">
+                            <Link to='/skills' className={button ? click ? "nav-links" : "disabled" : "nav-links"} onClick={closeMenu}>
                                 Skills
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/projects' className='nav-links' onClick={closeMenu}>
+                            <Link to='/projects' className={button ? click ? "nav-links" : "disabled" : "nav-links"} onClick={closeMenu}>
                                 Projects
                             </Link>
                         </li>
