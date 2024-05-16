@@ -1,0 +1,73 @@
+.font-used {
+    font-family: oswald;
+}
+
+.title {
+    text-align: left;
+    font-size: xx-large;
+}
+
+.first-row {
+    columns: 2;
+    top: 90%;
+}
+
+.about-me {
+    padding: 50px 0;
+    font-size: large;
+    color: #ffff;
+
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-pic {
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 850px) {
+    .container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .profile-pic, .about-content {
+        flex: 1;
+    }
+
+    .profile-pic {
+        margin-bottom: 0;
+        margin-right: 40px;
+        height: 250px;
+        width: 250px;
+    }
+}
