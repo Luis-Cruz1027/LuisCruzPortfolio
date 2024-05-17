@@ -22,29 +22,27 @@ function Navbar(){
     return(
         <>
             <nav className="navbar">
-                <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
-                        Luis Cruz
-                        <div className='navbar-trail'>
-                            Bachelor of Science in Computer Science
-                        </div>
-                    </Link>
-                    <div onClick={handleClick}>
-                        <i className={button ? click ? "fa-solid fa-xmark menu-icon" : "fa-solid fa-bars menu-icon" : ""}/>
+                <Link to="/" className="navbar-logo">
+                    Luis Cruz
+                    <div className='navbar-trail'>
+                        Bachelor of Science in Computer Science
                     </div>
-                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className="nav-item">
-                            <Link to='/skills' className={button ? click ? "nav-links" : "disabled" : "nav-links"} onClick={closeMenu}>
-                                Skills
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/projects' className={button ? click ? "nav-links" : "disabled" : "nav-links"} onClick={closeMenu}>
-                                Projects
-                            </Link>
-                        </li>
-                    </ul>
+                </Link>
+                <div onClick={handleClick}>
+                    <i className={button ? click ? "fa-solid fa-xmark menu-icon" : "fa-solid fa-bars menu-icon" : ""}/>
                 </div>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <li className="nav-item">
+                        <Link to='/skills' className={button ? click ? "nav-links" : "disabled" : "nav-links"} onClick={closeMenu}>
+                            Skills
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/projects' className={button ? click ? "nav-links" : "disabled" : "nav-links"} onClick={closeMenu}>
+                            Projects
+                        </Link>
+                    </li>
+                </ul>
             </nav>
         </>
     )
