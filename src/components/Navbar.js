@@ -32,6 +32,11 @@ function Navbar(){
                     <i className={button ? click ? "fa-solid fa-xmark menu-icon" : "fa-solid fa-bars menu-icon" : ""} style={{color: "#ffffff"}} />
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <li className='nav-item'>
+                        <Link to="/resume" className={button ? click ? "nav-links" : "disabled" : "nav-links"} onClick={closeMenu}>
+                            Resume
+                        </Link>
+                    </li>
                     <li className="nav-item">
                         <Link to='/skills' className={button ? click ? "nav-links" : "disabled" : "nav-links"} onClick={closeMenu}>
                             Skills
