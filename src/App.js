@@ -3,6 +3,7 @@ import './App.css';
 import AboutMe from './components/AboutMe';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
+import Resume from './components/Resume';
 import Skills from './components/Skills';
 
 import css from './cssBackground.png';
@@ -53,6 +54,7 @@ const App = () => {
           <Route path='/' element={<AboutMe />} />
           <Route path='/projects' element={<Projects sites={projectSites}/>} />
           <Route path='/skills' element={<Skills />} />
+          <Route path='/resume' element={<Resume />} />
         </Routes>
       </Router>
     </>

@@ -39,7 +39,7 @@
   
   .nav-menu {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
@@ -99,11 +99,13 @@
   
     .nav-menu.active {
       background: #242222;
-      left: 0;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
+      left: 0;
+      width: 100vw;
     }
+    
   
     .nav-links {
       text-align: center;

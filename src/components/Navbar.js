@@ -4,7 +4,7 @@ import './Navbar.css';
 
 function Navbar(){
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
+    const [button, setButton] = useState(false);
     const handleClick = () => setClick(!click);
     const closeMenu = () => setClick(false);
 
@@ -29,9 +29,14 @@ function Navbar(){
                     </div>
                 </Link>
                 <div onClick={handleClick}>
-                    <i className={button ? click ? "fa-solid fa-xmark menu-icon" : "fa-solid fa-bars menu-icon" : ""}/>
+                    <i className={button ? click ? "fa-solid fa-xmark menu-icon" : "fa-solid fa-bars menu-icon" : ""} style={{color: "#ffffff"}} />
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <li className='nav-item'>
+                        <Link to="/resume" className={button ? click ? "nav-links" : "disabled" : "nav-links"} onClick={closeMenu}>
+                            Resume
+                        </Link>
+                    </li>
                     <li className="nav-item">
                         <Link to='/skills' className={button ? click ? "nav-links" : "disabled" : "nav-links"} onClick={closeMenu}>
                             Skills
