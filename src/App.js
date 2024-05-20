@@ -27,10 +27,10 @@ const App = () => {
       description: "This project is a collaboration between Luis Cruz and Gilberto Gonzalez. The aim of this project is to create an application to be used as a tool for players of the tabletop role-playing game, Dungeons and Dragons. Whether the player is new to DND or not, whether they're in a party, it doesn't matter. The goal is to create a dynamic experience using OpenAI's API to allow the users to interact with chatGPT. This project is created in the Unity environment and makes use of it's premade tools."
     },
     {
-      name: "Homebrew",
+      name: "Homebrew Dripper App",
       background: homebrew,
-      url: "https://gitfront.io/r/LuisCruz1027/WN3CjXYLsfd4/homebrew-fixed-LuisCruz1027/",
-      description: "This project utilizes Flutter to create a phone application that changes states as you navigate through the screens."
+      url: "https://gitfront.io/r/LuisCruz1027/vmRyJwmYNX83/homebrew-dripper-d1360-0404/",
+      description: "This project utilizes Flutter to create a phone application that changes states as you navigate through the screens. This was a collaborative effort that used proper TDD. A jira was created to follow the workflow",
     },
     {
       name: "Digital Image Processing",
