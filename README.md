@@ -18,4 +18,4 @@ While working on this project I did run into some challenges including:
 
 ## Project Link
 
-### [http://](http://3.129.108.131/)
+### [http://luiscruzportfolio.com](http://3.129.108.131/)
